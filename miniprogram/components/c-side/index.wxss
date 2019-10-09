@@ -1,0 +1,6 @@
+.c-side{
+  height: 100%;
+  min-height: 100vh;
+  background-image: url(http://pz3tx34sh.bkt.clouddn.com/side-bg.jpg);
+  background-size: cover;
+}

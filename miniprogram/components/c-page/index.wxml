@@ -1,0 +1,12 @@
+<view class="c-page">
+  <view class="c-page_header"></view>
+  <view class="c-page_main">
+    <view class="c-page_side">
+      <c-side></c-side>
+    </view>
+    <view class="c-page_page">
+      <slot />
+    </view>
+  </view>
+  <view class="c-page-footer"></view>
+</view>
