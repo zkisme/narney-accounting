@@ -1,0 +1,21 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"miniprogramRoot": "miniprogram/",
+	"compileType": "miniprogram",
+	"libVersion": "2.4.0",
+	"projectname": "纳尼记账",
+	"scripts": {
+		"beforeCompile": "npm run tsc",
+		"beforePreview": "npm run tsc",
+		"beforeUpload": "npm run tsc"
+	},
+	"setting": {},
+	"appid": "wx10de23de758c1e36",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {},
+  "cloudfunctionRoot": "miniprogram/function"
+}
