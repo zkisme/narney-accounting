@@ -69,7 +69,7 @@ declare interface WxComponent extends BaseComponent {
   data: IAnyObject;
   /** 组件数据，**包括内部数据和属性值**（与 `data` 一致） */
   properties: {
-    [propertyName: string]: PropertyOption;
+    [propertyName: string]: PropertyOption | PropertyType;
   };
 
   /** 设置data并执行视图层渲染 */
@@ -165,7 +165,7 @@ declare interface ComponentOptions {
 declare interface BaseComponent extends ComponentLifetimes {
   /** 组件的对外属性，是属性名到属性设置的映射表 */
   properties?: {
-    [propertyName: string]: PropertyOption;
+    [propertyName: string]: PropertyOption | PropertyType;
   };
   /** 组件的内部数据，和 `properties` 一同用于组件的模板渲染 */
   data?: IAnyObject;
@@ -173,7 +173,7 @@ declare interface BaseComponent extends ComponentLifetimes {
   observers?: IAnyObject;
   /** object组件的方法，包括事件响应函数和任意的自定义方法，关于事件响应函数的使用，参见 [组件事件](events.md) */
   methods?: {
-    [methodName: string]: (this: WxComponent) => any;
+    [methodName: string]: (this: WxComponent, args?:any) => any | void;
   };
   /** 类似于mixins和traits的组件间代码复用机制，参见 [behaviors](behaviors.md) */
   behaviors?: string[];

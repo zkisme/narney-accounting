@@ -1,10 +1,16 @@
-/**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+@import "./common/styles/icon.wxss";
+
+page {
+  --primary: #00AFB5;
+  --success: #A9E5BB;
+  --warning: #FF9900;
+  --danger:  #F72C25;
+}
+
+.primary { color: var(--primary);}
+.success { color: var(--success);}
+.warning { color: var(--warning);}
+.danger  { color: var(--danger);}
+
+.mb20 { margin-bottom: 20rpx;}
+.mb30 { margin-bottom: 30rpx;}
