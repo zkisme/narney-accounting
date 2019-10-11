@@ -71,6 +71,8 @@ declare interface WxComponent extends BaseComponent {
   properties: {
     [propertyName: string]: PropertyOption | PropertyType;
   };
+  __wxWebviewId__: number;
+  __wxExparserNodeId__: number;
 
   /** 设置data并执行视图层渲染 */
   setData(

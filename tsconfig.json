@@ -20,7 +20,8 @@
     "strictPropertyInitialization": true,
     "typeRoots": [
       "./typings"
-    ]
+    ],
+    "lib": ["es2018"]
   },
   "include": [
     "./miniprogram/**/*.ts"

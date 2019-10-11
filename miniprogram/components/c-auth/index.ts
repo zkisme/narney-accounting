@@ -1,4 +1,5 @@
 import { BaseComponent } from "../../common/base/baseComponent";
+import note from "../../common/base/note";
 
 // components/c-auth/index.js
 BaseComponent({
@@ -16,10 +17,16 @@ BaseComponent({
 
   },
 
+  created(){
+    note.on('showAuth', this.toggleAuth, this)
+  },
+
   /**
    * 组件的方法列表
    */
   methods: {
-
+    toggleAuth(){
+      
+    }
   }
 })

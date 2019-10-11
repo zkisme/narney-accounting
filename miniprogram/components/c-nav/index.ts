@@ -1,4 +1,5 @@
 import { BaseComponent } from "../../common/base/baseComponent";
+import note from "../../common/base/note";
 
 // components/c-nav/index.js
 BaseComponent({

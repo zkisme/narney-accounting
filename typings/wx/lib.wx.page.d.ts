@@ -107,6 +107,8 @@ declare namespace Page {
 
     /** 到当前页面的路径，类型为`String`。最低基础库： `1.2.0` */
     route?: string;
+    __wxWebviewId__: number;
+    __wxExparserNodeId__: number;
   }
 
   interface PageInstance<
