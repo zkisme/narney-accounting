@@ -52,7 +52,7 @@ class Note {
     if(!this.data[scope]) this.data[scope] = {value: null, watch:{}}
     if(!this.data[scope].watch[ctx.__wxWebviewId__]) this.data[scope].watch[ctx.__wxWebviewId__] = {}
     if(!this.data[scope].watch[ctx.__wxWebviewId__][ctx.__wxExparserNodeId__]) this.data[scope].watch[ctx.__wxWebviewId__][ctx.__wxExparserNodeId__] = []
-    this.data[scope].watch[ctx.__wxWebviewId__][ctx.__wxExparserNodeId__].push(fn.bind(ctx))
+    this.data[scope].watch[ctx.__wxWebviewId__][ctx.__wxExparserNodeId__].push(fn)
     return this.data[scope].value
   }
 

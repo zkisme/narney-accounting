@@ -25,11 +25,10 @@ BaseComponent({
    * 组件的方法列表
    */
   methods: {
-    toggleAuth(value){
+    toggleAuth(){
       this.setData({
         show: !this.data.show
       })
-      value && value.success && value.success(value)
     }
   }
 })

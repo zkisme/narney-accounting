@@ -11,7 +11,4 @@
     </view>
   </view>
   <view class="c-page-footer"></view>
-
-  <!-- 授权弹窗 -->
-  <c-auth></c-auth>
 </view>

@@ -7,7 +7,7 @@ BaseComponent({
    * 组件的属性列表
    */
   properties: {
-    show: Boolean,
+
   },
 
   /**
@@ -25,11 +25,8 @@ BaseComponent({
    * 组件的方法列表
    */
   methods: {
-    toggleAuth(value){
-      this.setData({
-        show: !this.data.show
-      })
-      value && value.success && value.success(value)
+    toggleAuth(){
+      
     }
   }
 })

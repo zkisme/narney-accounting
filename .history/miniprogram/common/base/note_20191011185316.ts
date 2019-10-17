@@ -27,7 +27,7 @@ class Note {
             this.data[scope].value = value
           })
         })
-        resolve(this.data[scope].value, value)
+        resolve(this.data[scope].value)
       } catch (error) {
         reject(error)
       }
@@ -52,7 +52,7 @@ class Note {
     if(!this.data[scope]) this.data[scope] = {value: null, watch:{}}
     if(!this.data[scope].watch[ctx.__wxWebviewId__]) this.data[scope].watch[ctx.__wxWebviewId__] = {}
     if(!this.data[scope].watch[ctx.__wxWebviewId__][ctx.__wxExparserNodeId__]) this.data[scope].watch[ctx.__wxWebviewId__][ctx.__wxExparserNodeId__] = []
-    this.data[scope].watch[ctx.__wxWebviewId__][ctx.__wxExparserNodeId__].push(fn.bind(ctx))
+    this.data[scope].watch[ctx.__wxWebviewId__].id.push(fn)
     return this.data[scope].value
   }
 

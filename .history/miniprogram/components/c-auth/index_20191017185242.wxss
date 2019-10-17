@@ -26,7 +26,7 @@ button, button::after {
   align-items: center;
   position: absolute;
   left: 0;
-  bottom: 200rpx;
+  bottom: 0;
   width: 100%;
 }
 .c-auth_cancel, .c-auth_login {

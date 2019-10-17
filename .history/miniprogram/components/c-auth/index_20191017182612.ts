@@ -29,7 +29,7 @@ BaseComponent({
       this.setData({
         show: !this.data.show
       })
-      value && value.success && value.success(value)
+      value && value.callback && value.callback()
     }
   }
 })

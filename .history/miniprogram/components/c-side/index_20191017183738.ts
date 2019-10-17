@@ -1,13 +1,13 @@
 import { BaseComponent } from "../../common/base/baseComponent";
 import note from "../../common/base/note";
 
-// components/c-auth/index.js
+// components/c-side/index.js
 BaseComponent({
   /**
    * 组件的属性列表
    */
   properties: {
-    show: Boolean,
+
   },
 
   /**
@@ -17,19 +17,14 @@ BaseComponent({
 
   },
 
-  created(){
-    note.on('showAuth', this.toggleAuth, this)
-  },
-
   /**
    * 组件的方法列表
    */
   methods: {
-    toggleAuth(value){
-      this.setData({
-        show: !this.data.show
+    auth(){
+      note.emit('showAuth', {
+        callback: (value) => { console.log(123, value) }
       })
-      value && value.success && value.success(value)
     }
   }
 })
