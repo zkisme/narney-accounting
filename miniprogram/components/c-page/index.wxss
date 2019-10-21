@@ -1,32 +1,40 @@
-.c-page, .c-page_side {
+.c-page,
+.c-page_side {
   height: 100%;
 }
-.c-page_main{
+
+.c-page_main {
   display: flex;
   margin-left: -60vw;
 }
-.c-page_page{
+
+.c-page_page {
   width: 100vw;
   position: relative;
   box-sizing: border-box;
-  padding: 30rpx;
 }
-.c-page_main, .c-page_page{
+
+.c-page_main,
+.c-page_page {
   transition: all 0.3s ease-in-out;
 }
-.c-page--show-side{
+
+.c-page--show-side {
   transform: translate(60vw, 0);
 }
+
 .c-page--show-side .c-page_page {
   transform: translateY(50rpx);
 }
-.c-page_side-menu{
+
+.c-page_side-menu {
   position: absolute;
   left: 30rpx;
   top: 30rpx;
   z-index: 99;
 }
-.c-page_side-mask{
+
+.c-page_side-mask {
   position: absolute;
   left: 0;
   top: 0;

@@ -1,0 +1,41 @@
+.header {
+  min-height: 200rpx;
+  background: var(--primary);
+  padding: 30rpx 0;
+}
+
+.header input {
+  height: 200rpx;
+  width: 100%;
+  font-size: 80rpx;
+  color: #fff;
+  text-align: right;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.tab {
+  display: flex;
+  height: 60rpx;
+  background: #fff;
+  border-radius: 30rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  overflow: hidden;
+  border: 1rpx solid #fff;
+}
+
+.tab-item {
+  flex: 1;
+  color: var(--primary);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-item-active {
+  background: var(--primary);
+  color: #fff;
+  border-radius: 30rpx;
+}

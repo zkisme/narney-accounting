@@ -30,5 +30,5 @@
     "node_modules",
     "miniprogram_dist",
     "**/*.spec.ts"
-  ]
+  ],
 }

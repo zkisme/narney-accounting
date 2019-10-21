@@ -1,0 +1,9 @@
+<c-page>
+  <view class="header">
+    <view class="tab">
+      <view class="tab-item tab-item-active">收入</view>
+      <view class="tab-item">支出</view>
+    </view>
+    <input type="digit" bindinput="inputNumber" />
+  </view>
+</c-page>

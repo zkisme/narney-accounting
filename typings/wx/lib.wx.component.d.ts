@@ -35,7 +35,7 @@ declare interface PropertyOption {
   observer?(
     newVal?: any,
     oldVal?: any,
-    changedPath?: Array<string | number>,
+    changedPath?: Array<string | number>
   ): void;
   optionalTypes?: PropertyType[];
 }
@@ -84,7 +84,7 @@ declare interface WxComponent extends BaseComponent {
      */
     data: IAnyObject,
     /** setData引起的界面更新渲染完毕后的回调函数，最低基础库： `1.5.0` */
-    callback?: (data: IAnyObject) => void,
+    callback?: (data: IAnyObject) => void
   ): void;
   /** 检查组件是否具有 `behavior` （检查时会递归检查被直接或间接引入的所有behavior） */
   hasBehavior(behavior: object): void;
@@ -94,7 +94,7 @@ declare interface WxComponent extends BaseComponent {
   createSelectorQuery(): wx.SelectorQuery;
   /** 创建一个 IntersectionObserver 对象，选择器选取范围为这个组件实例内 */
   createIntersectionObserver(
-    options: wx.CreateIntersectionObserverOption,
+    options: wx.CreateIntersectionObserverOption
   ): wx.IntersectionObserver;
   /** 使用选择器选择组件实例节点，返回匹配到的第一个组件实例对象（会被 `wx://component-export` 影响） */
   selectComponent(selector: string): WxComponent;
@@ -143,7 +143,7 @@ declare interface PageLifetimes {
 
 declare interface RelationOption {
   /** 目标组件的相对关系 */
-  type: 'parent' | 'child' | 'ancestor' | 'descendant';
+  type: "parent" | "child" | "ancestor" | "descendant";
   /** 关系生命周期函数，当关系被建立在页面节点树中时触发，触发时机在组件attached生命周期之后 */
   linked?(target: WxComponent): any;
   /** 关系生命周期函数，当关系在页面节点树中发生改变时触发，触发时机在组件moved生命周期之后 */
@@ -156,7 +156,7 @@ declare interface RelationOption {
 
 type DefinitionFilter = (
   defFields: WxComponent,
-  definitionFilterArr?: DefinitionFilter[],
+  definitionFilterArr?: DefinitionFilter[]
 ) => void;
 
 declare interface ComponentOptions {
@@ -175,7 +175,7 @@ declare interface BaseComponent extends ComponentLifetimes {
   observers?: IAnyObject;
   /** object组件的方法，包括事件响应函数和任意的自定义方法，关于事件响应函数的使用，参见 [组件事件](events.md) */
   methods?: {
-    [methodName: string]: (this: WxComponent, args?:any) => any | void;
+    [methodName: string]: (this: WxComponent, args?: any) => any | void;
   };
   /** 类似于mixins和traits的组件间代码复用机制，参见 [behaviors](behaviors.md) */
   behaviors?: string[];
@@ -211,5 +211,5 @@ declare interface BaseComponent extends ComponentLifetimes {
  * * `bug` : 对于 type 为 Object 或 Array 的属性，如果通过该组件自身的 `this.setData` 来改变属性值的一个子字段，则依旧会触发属性 observer ，且 observer 接收到的 `newVal` 是变化的那个子字段的值， `oldVal` 为空， `changedPath` 包含子字段的字段名相关信息。
  */
 declare function Component(
-  /** 自定义组件注册参数 */ options: BaseComponent,
+  /** 自定义组件注册参数 */ options: BaseComponent
 ): void;
