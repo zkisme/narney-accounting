@@ -1,8 +1,0 @@
-<view class="c-auth_mask {{show ? 'c-auth_show' : ''}}">
-  <view class="c-auth_userinfo">
-    <view class="c-auth_btn-group">
-      <view class="c-auth_cancel">暂不登录</view>
-      <button class="c-auth_login">立即登录</button>
-    </view>
-  </view>
-</view>

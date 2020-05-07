@@ -1,6 +1,0 @@
-<view class="c-side">
-  <view class="c-side_user">
-    <image class="c-side_user-img mb20" src="{{userImg || imgHost + '/default-user-img.png'}}" mode="aspectFill" lazy-load="{{true}}" />
-    <buutton class="c-side_login">登录</buutton>
-  </view>
-</view>

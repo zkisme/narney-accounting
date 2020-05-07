@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "c-side": "../c-side/index",
-    "c-auth": "../c-auth/index"
-  }
-}
